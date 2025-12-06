@@ -8,8 +8,8 @@ from ISLP.svm import plot as plot_svm
 random_numbers = np.random.default_rng(1)
 X = random_numbers.standard_normal((60, 2)) 
 y = np.array([-1]*30+[1]*30) 
-X[y==1] += 0.35
-X[y==-1] -= 0.35
+X[y==1] += 1.4
+X[y==-1] -= 0.5
 fig, ax = subplots(figsize=(8,8)) 
 ax.scatter(X[:,0],
 X[:,1],
