@@ -19,7 +19,6 @@ svm_linear_small.fit(X, y)
 fig, ax = subplots(figsize=(8,8))
 plot_svm(X,
 y, svm_linear_small , ax=ax)
-plt.show()
 kfold = skm.KFold(5, random_state=0,
 shuffle=True)
 grid = skm.GridSearchCV(svm_linear_small,
