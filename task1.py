@@ -50,8 +50,8 @@ for C, i in training_error_rate_dictionary.items():
 random_numbers = np.random.default_rng(1)
 X_test = random_numbers.standard_normal((30, 2)) 
 y_test = np.array([-1]*15+[1]*15) 
-X_test[y_test==1] += 1.5
-X_test[y_test==-1] -= 1.5
+X_test[y_test==1] += 1.4
+X_test[y_test==-1] -= 0.5
 fig, ax = subplots(figsize=(8,8)) 
 ax.scatter(X_test[:,0],
 X_test[:,1],
